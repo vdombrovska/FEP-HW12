@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HW10</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <form id="newForm" class="form">
+            <table >
+                <thead>
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="contactsList"></tbody>
+                <tfoot>
+                    <tr>
+                        <td><input type="text" name="firstName" id="inputFirstName" class="form-input"></td>
+                        <td><input type="text" name="lastName" id="InputLastName" class="form-input"></td>
+                        <td><input type="text" name="phonenumber" id="InputUsersTel" class="form-input"></td>
+                        <td><button type="submit" id="addBtn">Add Contact</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+        <script type="text/template" id="userTemplate">
+            <tr id="contactTemplate">
+                <td>{firstName}</td>
+                <td>{lastName}</td>
+                <td>{phone}</td>
+                <td><button type="button" class = "delete" id="deleteBtn">Delete</button></td>
+            </tr>
+        </script>
+    </body>
+</html>
